@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="storemobile2019vista@localhost" uuid="db56d1f9-cd05-4dfb-9716-87f99b61d8f8">
+      <database-info product="MySQL" version="5.5.5-10.1.29-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )" dbms="MARIADB" exact-version="5.5.5">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>global2</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="NewPersistenceUnit/Hibernate" uuid="dfff11d6-f8a0-4569-a776-a9a7a9fe82c1">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0.0" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="NewPersistenceUnit/TopLink" uuid="70d3f270-2832-49c0-9d5b-3290d8036237">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0.0" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="NewPersistenceUnit/OpenJPA" uuid="b7b3f709-c75f-4384-b9a3-431291d6a6c9">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0.0" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="NewPersistenceUnit/EclipseLink" uuid="ea872a4b-b9e9-4220-9dbd-f133f7d63466">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0.0" />
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

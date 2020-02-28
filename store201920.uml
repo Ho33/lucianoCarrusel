@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>harnina.validate.validators.CifNieNifValidate</OriginalElement>
+  <nodes>
+    <node x="927.25" y="405.0">harnina.validate.NotFoundValidate</node>
+    <node x="98.0" y="480.0">javax.persistence.Table</node>
+    <node x="382.24999999999994" y="405.0">harnina.validate.validators.CifValidate</node>
+    <node x="431.95833333333337" y="80.0">java.lang.Enum</node>
+    <node x="512.2499999999999" y="315.0">harnina.validate.Validable</node>
+    <node x="633.25" y="405.0">harnina.validate.ErrorValidate</node>
+    <node x="98.75" y="240.0">harnina.ajaxController.managerSignUp</node>
+    <node x="335.375" y="160.0">harnina.util.ControlData</node>
+    <node x="53.24999999999994" y="405.0">harnina.validate.validators.LettersWithSpaceValidate</node>
+    <node x="37.0" y="560.0">harnina.entity.UserEntity</node>
+    <node x="0.0" y="480.0">javax.persistence.Entity</node>
+    <node x="768.25" y="405.0">harnina.validate.validators.CifNieNifValidate</node>
+    <node x="103.0" y="0.0">javax.servlet.ServletConfig</node>
+    <node x="175.25" y="160.0">javax.servlet.http.HttpServlet</node>
+    <node x="467.375" y="160.0">harnina.errror.ErrorValidate</node>
+    <node x="0.0" y="0.0">javax.servlet.Servlet</node>
+    <node x="544.0" y="480.0">harnina.entity.Login</node>
+    <node x="242.0" y="0.0">java.io.Serializable</node>
+    <node x="48.25" y="160.0">javax.servlet.annotation.WebServlet</node>
+    <node x="383.0" y="480.0">harnina.bbdd.accessDB.AccessMysql</node>
+    <node x="78.64583333333334" y="80.0">javax.servlet.GenericServlet</node>
+    <node x="219.0" y="480.0">harnina.util.InverProperty</node>
+    <node x="507.24999999999994" y="405.0">harnina.validate.validators.NifValidate</node>
+    <node x="434.70833333333337" y="0.0">java.lang.Comparable</node>
+    <node x="0.0" y="315.0">harnina.validate.validators.RegularExpressionValidation</node>
+    <node x="254.24999999999994" y="405.0">harnina.validate.validators.NieValidate</node>
+    <node x="667.0" y="480.0">harnina.entity.User</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="harnina.entity.UserEntity" target="javax.persistence.Table">
+      <point x="25.25" y="-15.0" />
+      <point x="112.75" y="535.0" />
+      <point x="136.0" y="535.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="harnina.util.ControlData" target="java.lang.Enum">
+      <point x="0.0" y="-15.0" />
+      <point x="391.375" y="135.0" />
+      <point x="451.70833333333337" y="135.0" />
+      <point x="-19.75" y="15.0" />
+    </edge>
+    <edge source="harnina.validate.validators.NifValidate" target="harnina.validate.Validable">
+      <point x="-5.6843418860808015E-14" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="harnina.ajaxController.managerSignUp" target="javax.servlet.annotation.WebServlet">
+      <point x="-33.25" y="-15.0" />
+      <point x="132.0" y="215.0" />
+      <point x="101.75" y="215.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="harnina.validate.validators.LettersWithSpaceValidate" target="harnina.validate.Validable">
+      <point x="45.25" y="-15.0" />
+      <point x="188.99999999999994" y="365.0" />
+      <point x="519.1071428571427" y="365.0" />
+      <point x="-41.14285714285717" y="15.0" />
+    </edge>
+    <edge source="java.lang.Enum" target="java.lang.Comparable">
+      <point x="19.75" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="harnina.validate.validators.CifValidate" target="harnina.validate.Validable">
+      <point x="0.0" y="-15.0" />
+      <point x="434.74999999999994" y="385.0" />
+      <point x="546.5357142857142" y="385.0" />
+      <point x="-13.714285714285722" y="15.0" />
+    </edge>
+    <edge source="javax.servlet.http.HttpServlet" target="java.io.Serializable">
+      <point x="26.75" y="-15.0" />
+      <point x="255.5" y="135.0" />
+      <point x="295.0" y="135.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="harnina.errror.ErrorValidate" target="java.lang.Enum">
+      <point x="0.0" y="-15.0" />
+      <point x="524.875" y="135.0" />
+      <point x="491.20833333333337" y="135.0" />
+      <point x="19.75" y="15.0" />
+    </edge>
+    <edge source="harnina.validate.validators.CifNieNifValidate" target="harnina.validate.Validable">
+      <point x="0.0" y="-15.0" />
+      <point x="837.75" y="375.0" />
+      <point x="587.6785714285713" y="375.0" />
+      <point x="27.428571428571445" y="15.0" />
+    </edge>
+    <edge source="harnina.validate.ErrorValidate" target="harnina.validate.Validable">
+      <point x="0.0" y="-15.0" />
+      <point x="690.75" y="385.0" />
+      <point x="573.9642857142856" y="385.0" />
+      <point x="13.714285714285722" y="15.0" />
+    </edge>
+    <edge source="harnina.ajaxController.managerSignUp" target="javax.servlet.http.HttpServlet">
+      <point x="33.25" y="-15.0" />
+      <point x="198.5" y="215.0" />
+      <point x="228.75" y="215.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="harnina.entity.UserEntity" target="javax.persistence.Entity">
+      <point x="-25.25" y="-15.0" />
+      <point x="62.25" y="535.0" />
+      <point x="39.0" y="535.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="javax.servlet.GenericServlet" target="java.io.Serializable">
+      <point x="41.0" y="-15.0" />
+      <point x="181.14583333333334" y="55.0" />
+      <point x="259.6666666666667" y="55.0" />
+      <point x="-35.333333333333314" y="15.0" />
+    </edge>
+    <edge source="java.lang.Enum" target="java.io.Serializable">
+      <point x="-19.75" y="-15.0" />
+      <point x="451.70833333333337" y="55.0" />
+      <point x="330.3333333333333" y="55.0" />
+      <point x="35.333333333333314" y="15.0" />
+    </edge>
+    <edge source="harnina.validate.validators.NieValidate" target="harnina.validate.Validable">
+      <point x="0.0" y="-15.0" />
+      <point x="308.24999999999994" y="375.0" />
+      <point x="532.8214285714284" y="375.0" />
+      <point x="-27.428571428571445" y="15.0" />
+    </edge>
+    <edge source="harnina.validate.NotFoundValidate" target="harnina.validate.Validable">
+      <point x="0.0" y="-15.0" />
+      <point x="999.25" y="365.0" />
+      <point x="601.3928571428571" y="365.0" />
+      <point x="41.14285714285717" y="15.0" />
+    </edge>
+    <edge source="harnina.validate.validators.LettersWithSpaceValidate" target="harnina.validate.validators.RegularExpressionValidation">
+      <point x="-45.25" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="javax.servlet.http.HttpServlet" target="javax.servlet.GenericServlet">
+      <point x="-26.75" y="-15.0" />
+      <point x="202.0" y="135.0" />
+      <point x="140.14583333333334" y="135.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="javax.servlet.GenericServlet" target="javax.servlet.Servlet">
+      <point x="-41.0" y="-15.0" />
+      <point x="99.14583333333334" y="55.0" />
+      <point x="41.5" y="55.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="javax.servlet.GenericServlet" target="javax.servlet.ServletConfig">
+      <point x="0.0" y="-15.0" />
+      <point x="140.14583333333334" y="55.0" />
+      <point x="162.5" y="55.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7890510948905112" x="615.2888378052432" y="279.09343200740045" />
+  <SelectedNodes>
+    <node>harnina.validate.validators.CifNieNifValidate</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
