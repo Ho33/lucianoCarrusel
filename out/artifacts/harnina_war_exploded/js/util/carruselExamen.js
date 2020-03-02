@@ -7,6 +7,9 @@ STORE.carruselExamen={
            STORE.swipper.swiper();
     },
     createModels:function (models) {
+        console.log("modelos : ",models);
+        console.log(models);
+
         var node=document.createElement("div");
         node.className="swiper-wrapper";
         for (var i=0;i<models.length;i++){

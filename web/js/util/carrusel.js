@@ -6,10 +6,13 @@ STORE.Carrusel = {
     angulo : 0,
     
     createCarrusel : function(model){
-    
+        $('giran').innerHTML="";
+    console.log("joputaaaaaaaaaaaaa");
+        console.log(model);
+STORE.Carrusel.pageItem=model.length;
       STORE.Carrusel.angulo = 360 / STORE.Carrusel.pageItem;
-     for (var i = 0; i < 3 ; i++) { // STORE.Carrito.carruselActivo
-        (function (i) {
+      console.log(model.length);
+     for (var i = 0; i < model.length ; i++) { // STORE.Carrito.carruselActivo
            var nodoPanelMobil = document.createElement("div");
            nodoPanelMobil.className = "nodoPanelMobil"; 
     
@@ -42,12 +45,12 @@ STORE.Carrusel = {
    //var modelo = JSON.parse(localStorage.getItem(localStorage.getItem("producto:" + (STORE.Carrito.inicioModelo + i))));
             
     
-    var rutaImagenDelantera = "img/imageModel/AppleIPhone6sFront.jpg"; // + modelo.imagenDelantera;
-                var rutaImagenTrasera = "img/imageModel/AppleIPhone6sBack.jpg" ;
+    var rutaImagenDelantera = "../../img/imageModel/"+model[i].imageModel; // + modelo.imagenDelantera;
+                var rutaImagenTrasera = "../../img/imageModel/"+model[i].imageRear;
                 //+ modelo.imagenTrasera;
-                var rutaImagenIzquierda = "img/imageModel/HuaweiP20LiteSide.jpg";
+                var rutaImagenIzquierda = "../../img/imageModel/"+model[i].imageSide;
             //+ modelo.imagenLado;
-                var rutaImagenDerecha = "img/imageModel/HuaweiPSmart2019Dual.jpg" 
+                var rutaImagenDerecha = "../../img/imageModel/"+model[i].imageSide;
                 //+ modelo.imagenLado;
                 nodoImagenDelantera.src = rutaImagenDelantera;
                 nodoImagenTrasera.src = rutaImagenTrasera;
@@ -93,10 +96,10 @@ STORE.Carrusel = {
                 nodoPanelBase.appendChild(nodoBaseElementoCarruselLateralIquierdo);
                 nodoPanelBase.appendChild(nodoBaseElementoCarruselLateralDerecho);
 
-                nodoBaseElementoCarruselLateralDerecho.innerText = "Samsung s8"; //modelo.nombreModelo;
-                nodoBaseElementoCarruselLateralIquierdo.innerText = "Samsung s8"; //modelo.nombreModelo;
-                nodoBaseElementoCarruselFrontal.innerText = "Samsung s8"; //modelo.nombreModelo;
-                nodoBaseElementoCarruselTrasero.innerText = "Samsung s8"; //modelo.nombreModelo;
+                nodoBaseElementoCarruselLateralDerecho.innerText = model[i].modelName; //modelo.nombreModelo;
+                nodoBaseElementoCarruselLateralIquierdo.innerText = model[i].modelName;//modelo.nombreModelo;
+                nodoBaseElementoCarruselFrontal.innerText = model[i].modelName; //modelo.nombreModelo;
+                nodoBaseElementoCarruselTrasero.innerText = model[i].modelName; //modelo.nombreModelo;
 
                 nodoPanelMobil.appendChild(nodoPanelBase);
 
@@ -122,7 +125,7 @@ STORE.Carrusel = {
                 });            
             
                 $('giran').appendChild(nodoPanelMobil);
-            }(i));
+
         }
 
     } 

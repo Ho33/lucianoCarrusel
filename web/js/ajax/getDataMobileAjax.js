@@ -5,7 +5,7 @@ STORE.plantillaShowCase = function () {
 STORE.mobiles = null;
 STORE.bloque = 0;
 var ultimaPagina = 1;
-var mobilesPerPage = 2;
+var mobilesPerPage = 5;
 var paginaPorBloque = 2;
 STORE.plantillaShowCase = STORE.mobileWindow;
 STORE.getDataMobile = function () {
@@ -37,18 +37,12 @@ STORE.getDataMobile = function () {
         })
     }, json);
 };
-
 STORE.getModels = function () {
     var paginaActiva = STORE.getActivePageCarrousel();
 
     var modelSelection = STORE.getModelSelection(paginaActiva, STORE.pagination.step);
     var bloquesito = Math.floor((paginaActiva-1) / (paginaPorBloque));
-    console.log("bloque Furea: " + STORE.bloque);
-    console.log("bloquesito Furea : " + bloquesito);
     if (STORE.bloque !== bloquesito) {
-        console.log("bloque : " + STORE.bloque);
-        console.log("bloquesito : " + bloquesito);
-        console.log("Cambiamos de bloque");
         STORE.bloque = bloquesito;
         ultimaPagina = paginaActiva;
         STORE.getDataMobile();
@@ -65,7 +59,6 @@ STORE.getModelSelection = function (page, numberOfModels) {
     console.log("Moviles Longitud: " + STORE.mobiles.length);
     result = [];
     for (var i = posicionInicial; i < posicionInicial + mobilesPerPage && i < STORE.mobiles.length; i++) {
-        console.log("Mobil en la posicion: " + i + " , " + posicionInicial);
         result.push(STORE.mobiles[i]);
     }
     return result;
@@ -85,6 +78,18 @@ STORE.almacenOpciones = [];
 var addOption = function (object) {
     STORE.almacenOpciones.push(object);
 }
+STORE.manageOptions = function (evt) {
+    $('showCase').innerHTML = "";
+    id = evt.target.id;
+    var objeto = STORE.mapaFunciones.get(id);
+    if (objeto.contain.length !== 0) {
+        console.log(objeto.contain);
+        STORE.createShowCase(objeto.contain);
+    }
+    STORE.plantillaShowCase = objeto.funcion;
+    STORE.getModels();
+    STORE.pagination.functionClick = objeto.functionSpy;
+};
 STORE.createOptionSlider = function () {
 
     addOption({
@@ -116,18 +121,6 @@ STORE.createOptionSlider = function () {
         coleccion[i].addEventListener('click', STORE.manageOptions);
     }
 };
-STORE.manageOptions = function (evt) {
-    $('showCase').innerHTML = "";
-    id = evt.target.id;
-    var objeto = STORE.mapaFunciones.get(id);
-    if (objeto.contain.length !== 0) {
-        console.log(objeto.contain);
-        STORE.createShowCase(objeto.contain);
-    }
-    STORE.plantillaShowCase = objeto.funcion;
-    STORE.getModels();
-    STORE.pagination.functionClick = objeto.functionSpy;
-};
 STORE.addCarrusel = function (funcion, contenedor, id) {
     var objecto = {
         funcion: funcion,
@@ -145,8 +138,6 @@ STORE.getElemtsCarrusel = function () {
     console.log(STORE.getModelSelection(STORE.getActivePageCarrousel(), STORE.pagination.step));
 };
 STORE.getModelsExam = function () {
-    console.log(STORE.getActivePageCarrousel());
-    console.log(STORE.pagination.step);
     var modelSelection = STORE.getModelSelection(STORE.getActivePageCarrousel(), STORE.pagination.step);
     STORE.carruselExamen.Init(modelSelection);
 }
